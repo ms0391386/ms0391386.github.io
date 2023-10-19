@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PingFang SC";
+}
+
+body {
+  background-color: #1f479c;
+  background-image: url("https://i.imgur.com/WJV8quZ.png");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+.thead {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.thead-title {
+  flex: 1;
+  background: #1364f0;
+  border: 1px solid #669af5;
+  backdrop-filter: blur(9.25164px);
+  font-size: 32px;
+  line-height: 45px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tbody {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.tbody-content {
+  flex: 1;
+  background: #ffffff;
+  border: 0.5px solid #bcceee;
+  backdrop-filter: blur(9.25164px);
+  font-size: 32px;
+  line-height: 45px;
+  color: #0a2a79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remark {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.remark-content {
+  background: #1364f0;
+  backdrop-filter: blur(9.25164px);
+  max-width: 1280px;
+  border-radius: 0px 0px 8px 8px;
+  border: #669af5;
+}
+
+.text {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.text-content {
+  background: #1364f0;
+  backdrop-filter: blur(9.25164px);
+  max-width: 1280px;
+  border-radius: 8px 8px 8px 8px;
+  border: #669af5;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.contract-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.contract-content {
+  background: #1364f0;
+  backdrop-filter: blur(9.25164px);
+  max-width: 1280px;
+  border-radius: 8px 8px 8px 8px;
+  border: #669af5;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.contract-content-item {
+  overflow-wrap: break-word;
+  font-size: 32px;
+  width: 100%;
+  background: rgb(237, 242, 247);
+  border-radius: 11px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 4%;
+}
+
+.contract-content-item:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+.copy-btn {
+  width: 200px;
+  height: 95px;
+  background: linear-gradient(rgb(255, 235, 144) 0%, rgb(246, 170, 23) 100%);
+  border-radius: 8px;
+  color: rgb(10, 42, 121);
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.news-item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.news-item-wrapper {
+  background: #1364f0;
+  backdrop-filter: blur(9.25164px);
+  max-width: 1280px;
+  border-radius: 8px 8px 8px 8px;
+  border: #669af5;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+
+.news-item-content {
+  overflow-wrap: break-word;
+  font-size: 32px;
+  width: 49.5%;
+  height: 130px;
+  background: rgb(237, 242, 247);
+  border-radius: 11px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 1%;
+}
+
+.news-item-content .desc {
+  height: 90%;
+  font-size: 24px;
+  color: #0a2a79;
+  flex: 1;
+}
+.news-item-content .img {
+  height: 90%;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 8px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.news-item-content:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+.tips-item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.tips-item-wrapper {
+  background: #1364f0;
+  backdrop-filter: blur(9.25164px);
+  max-width: 1280px;
+  border-radius: 8px 8px 8px 8px;
+  border: #669af5;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+
+.tips-item-content {
+  overflow-wrap: break-word;
+  font-size: 32px;
+  width: 49.5%;
+  background: rgb(237, 242, 247);
+  border-radius: 11px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 0 0.5%;
+}
+
+.tips-col {
+  flex: 1;
+  height: 30px;
+  background: #1b7ef2;
+  border: 1px solid rgb(255, 255, 255);
+  backdrop-filter: blur(3.59794px);
+  border-radius: 5.39691px 5.39691px 0px 0px;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tips-col.game-col {
+  flex: 4;
+  text-align: center;
+  font-size: 20px;
+}
+
+.tips-item-content:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+.gameBody {
+  color: #0a2a79;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(
+    rgb(215, 215, 215) 3.95%,
+    rgb(245, 245, 245) 36.84%
+  );
+  border: 1px solid rgb(255, 255, 255);
+  backdrop-filter: blur(3.06405px);
+  border-radius: 0px 0px 5.4px 5.4px;
+  margin: 0px auto;
+  height: 50px;
+}
+
+.team {
+  width: 132px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vs {
+  height: 75%;
+  text-align: center;
+}
+
+.rule {
+  background: #1b7ef2;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px auto;
+  margin-bottom: 0;
+}
+
+.tips-item-content .gameInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.tips-item-content .team1 {
+  flex: 1;
+  margin-right: 5px;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(183, 182, 182);
+  border-radius: 9.5452px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.tips-item-content .team2 {
+  flex: 1;
+  height: 40px;
+  background: #0a2a79;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 9.5452px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.test {
+  /* 按鈕背景2 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+
+  width: 200px;
+  height: 95px;
+
+  background: linear-gradient(180deg, #ffeb90 0%, #f6aa17 100%);
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+  /* 点击复制 */
+
+  display: none;
+  width: 56px;
+  height: 20px;
+
+  font-family: "PingFang SC";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #0a2a79;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* 点击复制 */
+
+  width: 128px;
+  height: 45px;
+
+  font-family: "PingFang SC";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 45px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #0a2a79;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
