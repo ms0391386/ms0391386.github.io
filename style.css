@@ -237,6 +237,10 @@ body {
   margin-bottom: 0px;
 }
 
+.tips-item-content:nth-last-child(2) {
+  margin-bottom: 0px;
+}
+
 .gameBody {
   color: #0a2a79;
   font-weight: 600;
@@ -313,65 +317,18 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.test {
-  /* 按鈕背景2 */
+#left-float-area {
+  position: fixed;
+  top: 25%;
+  right: 10px;
+  z-index: 10;
+  cursor: pointer;
+}
 
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 14px;
-
-  width: 200px;
-  height: 95px;
-
-  background: linear-gradient(180deg, #ffeb90 0%, #f6aa17 100%);
-  border-radius: 8px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-
-  /* 点击复制 */
-
-  display: none;
-  width: 56px;
-  height: 20px;
-
-  font-family: "PingFang SC";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  /* identical to box height */
-  text-align: center;
-
-  color: #0a2a79;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-  /* 点击复制 */
-
-  width: 128px;
-  height: 45px;
-
-  font-family: "PingFang SC";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 45px;
-  /* identical to box height */
-  text-align: center;
-
-  color: #0a2a79;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+#right-float-area {
+  position: fixed;
+  top: 25%;
+  left: 10px;
+  z-index: 10;
+  cursor: pointer;
 }

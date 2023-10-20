@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+      @font-face {
+        font-family: "ShangShouBiaoBangTi";
+        src: url("https://video.bbmaiqiu.com/resource/front/No.148-ShangShouBiaoBangTi-2-2.ttf")
+          format("truetype");
+      }
+    </style>
     <link rel="stylesheet" href="style.css" />
     <title>123</title>
   </head>
@@ -22,9 +29,31 @@
     >
       <div
         class="mainTheme"
-        style="width: 100%; background-color: rgb(56, 44, 96); display: flex"
+        style="
+          width: 100%;
+          background-color: rgb(56, 44, 96);
+          display: flex;
+          position: relative;
+        "
       >
         <img style="width: 100%" src="https://i.imgur.com/ASyVgnx.png" alt="" />
+        <div
+          style="
+            position: absolute;
+            color: #fff;
+            font-size: 64px;
+            font-family: 400;
+            top: 0;
+            left: 139px;
+            height: 498px;
+            display: flex;
+            align-items: center;
+          "
+        >
+          <span style="font-family: ShangShouBiaoBangTi; white-space: pre-line"
+            >{{title}}</span
+          >
+        </div>
       </div>
       <div id="two-column" style="margin-bottom: 10px">
         <div
@@ -299,7 +328,7 @@
         </div>
         <div class="tips-item">
           <div class="tips-item-wrapper">
-            <div class="tips-item-content">
+            <div v-for="item in list" class="tips-item-content">
               <div class="avator" style="display: flex">
                 <img
                   width="50"
@@ -366,6 +395,60 @@
           </div>
         </div>
       </div>
+      <div class="empty-block" style="height: 1px"></div>
+
+      <div id="right-float-area">
+        <div style="margin: 20px 0">
+          <img
+            width="154"
+            height="154"
+            src="https://i.imgur.com/Yr0KXnE.png"
+            alt=""
+          />
+        </div>
+        <div style="margin: 20px 0">
+          <img
+            width="154"
+            height="154"
+            src="https://i.imgur.com/Yr0KXnE.png"
+            alt=""
+          />
+        </div>
+        <div style="margin: 20px 0">
+          <img
+            width="154"
+            height="154"
+            src="https://i.imgur.com/Yr0KXnE.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="left-float-area">
+        <div style="margin: 20px 0">
+          <img
+            width="154"
+            height="154"
+            src="https://i.imgur.com/Yr0KXnE.png"
+            alt=""
+          />
+        </div>
+        <div style="margin: 20px 0">
+          <img
+            width="154"
+            height="154"
+            src="https://i.imgur.com/Yr0KXnE.png"
+            alt=""
+          />
+        </div>
+        <div style="margin: 20px 0">
+          <img
+            width="154"
+            height="154"
+            src="https://i.imgur.com/Yr0KXnE.png"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
 
     <script>
@@ -373,9 +456,11 @@
 
       createApp({
         setup() {
-          const list = ref([1, 2, 3, 4]);
+          const list = ref([1, 2, 3]);
+          const title = ref("龙虎主播对抗赛奖池");
           return {
             list,
+            title,
           };
         },
       }).mount("#app");
