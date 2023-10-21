@@ -4,6 +4,11 @@
   font-family: "PingFang SC";
 }
 
+ol,
+ul {
+  list-style-position: inside;
+}
+
 body {
   background-color: #1f479c;
   background-image: url("https://i.imgur.com/WJV8quZ.png");
